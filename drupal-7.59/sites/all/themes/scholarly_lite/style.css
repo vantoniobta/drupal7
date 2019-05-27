@@ -162,7 +162,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: 
 
 h1 { font-size: 35px; }
 
-h2 { font-size: 28px; font-weight: 400; }
+h2 { font-size: 20px; font-weight: 400; }
 
 h3 { font-size: 21px; }
 
@@ -170,7 +170,7 @@ h4 { font-size: 19px; }
 
 h5 { font-size: 16px; }
 
-h1.title { margin-top:0; margin-bottom: 20px; }
+h1.title { margin-top:0; margin-bottom: 5px; }
 
 .footer-area h2.title { font-size: 16px; margin-bottom: 15px; }
 
@@ -226,7 +226,13 @@ h1.title { margin-top:0; margin-bottom: 20px; }
 
 #header-top-inside { position: relative; }
 
-#header { padding: 40px 0 30px 0; position: relative; }
+
+/* nav-size vantonio */
+#header { 
+	padding: 20px 0 5px 0; 
+	position: relative;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 4px rgba(0,0,0,0.10);
+  }
 
 @media (max-width: 767px) {
 	#header-top-inside.mean-container { padding-right: 55px; }
@@ -253,7 +259,7 @@ h1.title { margin-top:0; margin-bottom: 20px; }
 
 #highlighted + #main-content { padding: 20px 0; }
 
-#main-content { padding: 60px 0; }
+#main-content { padding: 60px 0; }  /* nav-espacio entre el div vantonio */
 
 #promoted { padding: 0 0 20px 0; }
 
@@ -361,7 +367,7 @@ line-height: 20px; }
 }
 
 /* Main navigation menus*/
-#main-navigation ul.menu { padding: 10px 0 20px 0; text-align: right; }
+#main-navigation ul.menu { padding: 10px 0 20px 0; text-align: right;}
 
 #main-navigation ul.menu li { background: none; margin: 0 8px; display:inline-block; float:none; }
 
@@ -673,9 +679,9 @@ top:0; left: 0; }
 
 .node-mt .post-submitted-info .month { margin-top: -2px; }
 
-.node-mt .post-submitted-info .month, .node-mt .post-submitted-info .year { font-size: 14px; text-transform: uppercase; }
+.node-mt .post-submitted-info .month, .node-mt .post-submitted-info .year { font-size: 12px; text-transform: uppercase; }
 
-.node-mt .post-submitted-info .day { font-size: 29px; font-weight: 900; margin-bottom: 2px; }
+.node-mt .post-submitted-info .day { font-size: 20px; font-weight: 900; margin-bottom: 2px; }
 
 .node-mt .post-submitted-info i { color: #2a68af; margin-bottom: 5px; width: 100%; padding-top: 17px; }
 
