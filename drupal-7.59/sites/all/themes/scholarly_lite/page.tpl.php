@@ -1,7 +1,9 @@
 <?php if (theme_get_setting('scrolltop_display')): ?>
 <div id="toTop"><i class="fa fa-angle-up"></i></div>
 <?php endif; ?>
-
+<script type="text/javascript">
+var jq = jQuery.noConflict();
+</script> 
 <?php if ($page['header_top_left'] || $page['header_top_right']) :?>
 <!-- #header-top -->
 <div id="header-top" class="clearfix">

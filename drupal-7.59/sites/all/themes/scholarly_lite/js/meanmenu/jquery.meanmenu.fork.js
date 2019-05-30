@@ -171,32 +171,7 @@
                     //hide mean-nav ul
                     jQuery(meanContainer+' .mean-nav ul').hide();
                     
-                    // hide sub nav
-                     if(meanShowChildren) {
-                        // allow expandable sub nav(s)
-                         if(meanExpandableChildren){
-                           jQuery(meanContainer+' .mean-nav ul ul').each(function() {
-                               if(jQuery(this).children().length){
-                                   jQuery(this,'li:first').parent().append('<a class="mean-expand" href="#" style="font-size: '+ meanMenuCloseSize +'">'+ meanExpand +'</a>');                               
-                               }
-                           });
-                           jQuery(meanContainer+' .mean-expand').on("click",function(e){
-                              e.preventDefault();
-                               if (jQuery(this).hasClass("mean-clicked")) {
-                                  jQuery(this).text(meanExpand);
-                                   jQuery(this).prev('ul').slideUp(300, function(){});
-                               } else {
-                                  jQuery(this).text(meanContract);
-                                  jQuery(this).prev('ul').slideDown(300, function(){});
-                               }   
-                               jQuery(this).toggleClass("mean-clicked"); 
-                           });     
-                         } else {
-                             jQuery(meanContainer+' .mean-nav ul ul').show();   
-                         }
-                     } else {
-                         jQuery(meanContainer+' .mean-nav ul ul').hide();
-                     }
+                   
                      
                     // add last class to tidy up borders
                     jQuery(meanContainer+' .mean-nav ul li').last().addClass('mean-last');
