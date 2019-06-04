@@ -7,9 +7,8 @@
           <?php $custom_month = format_date($node->created, 'custom', 'M'); ?>
           <?php $custom_day = format_date($node->created, 'custom', 'd'); ?>
           <?php $custom_year = format_date($node->created, 'custom', 'Y'); ?>
-          <div class="month"><?php print $custom_month; ?></div>
-          <div class="day"><?php print $custom_day; ?></div>
-          <div class="year"><?php print $custom_year; ?></div>
+          
+          
         </div>
         <?php endif;?>
         <?php if (module_exists('comment') && ($node->comment == COMMENT_NODE_OPEN || ($node->comment == COMMENT_NODE_CLOSED && $node->comment_count > 0))): ?>
@@ -36,6 +35,7 @@
       <?php if ($display_submitted): ?>
           <div class="submitted-user">
           <?php print t('By !username', array('!username' => $name)); ?>
+          <p><?php print $custom_month; ?>/<?php print $custom_day; ?>/<?php print $custom_year; ?></p>
           </div>
       <?php endif; ?>
         

@@ -440,15 +440,21 @@ top: 10px; right: 7px; font-size: 12px; font-weight: 400; color: #9c9c9c; line-h
 
 .mean-container a.meanmenu-reveal.meanclose:after { font-family: "FontAwesome"; content: "\f00d"; font-size: 22px; font-weight: 400; }
 
-.mean-container .mean-nav { position: absolute; background: rgba(54,54,54,0.95); color: #fff; }
+.mean-container .mean-nav { position: absolute; background: rgb(66,189,205); color: #fff; }
 
-.mean-container .mean-nav ul { width: 100%!important; }
 
-.mean-container .mean-nav ul * { float: left!important; }
 
-.mean-container .mean-nav ul li a { color: #fff; border-bottom: 1px solid #323232; text-transform: none; border-top: none; line-height: 21px; text-decoration: none; }
 
-.mean-container .mean-nav ul li a:hover { background-color: #252525; }
+.mean-container .mean-nav ul { 
+	width: 100%!important;
+	
+}
+
+.mean-container .mean-nav ul * { float: left!important;  }
+
+.mean-container .mean-nav ul li a { color: #fff; border-bottom: 1px solid #42bdcd; text-transform: none; border-top: none; line-height: 21px; text-decoration: none; }
+
+.mean-container .mean-nav ul li a:hover { background-color: #42bdcd; }
 
 .mean-container .mean-nav ul li a.mean-expand { border-left: 1px solid #323232 !important; margin-top:0; border-bottom: none!important; height: 27px; 
 width: 26px!important; background: rgba(54,54,54,0.95); line-height: 27px; font-family: 'Lato', Helvetica Neue, Arial, Sans-serif; }
@@ -662,8 +668,17 @@ article.node { position: relative; }
 /*Node type: Blog & Article - Submitted info*/
 .node-mt .submitted-user { margin-bottom: 10px; font-size: 11px; }
 
-.node-mt .post-submitted-info { width: 55px; float: left; font-weight: 700; text-align: center; line-height: 1; position: absolute; 
-top:0; left: 0; }
+.node-mt .post-submitted-info { 
+	width: 55px; 
+	float: left; 
+	background-color: red;
+	font-weight: 700; 
+	text-align: center; 
+	line-height: 1; 
+	position: absolute; 
+    top:0; 
+    left: 0; 
+}
 
 .node-mt .submitted-date { margin: 10px 0 0 0; border-right: 1px solid #c2c2c2; padding-bottom: 10px; }
 
