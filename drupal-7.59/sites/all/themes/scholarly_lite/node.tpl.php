@@ -3,13 +3,7 @@
     <div class="post-submitted-info">
         
         <?php if ($display_submitted): ?>
-        <div class="submitted-date">
-          <?php $custom_month = format_date($node->created, 'custom', 'M'); ?>
-          <?php $custom_day = format_date($node->created, 'custom', 'd'); ?>
-          <?php $custom_year = format_date($node->created, 'custom', 'Y'); ?>
-          
-          
-        </div>
+      
         <?php endif;?>
         <?php if (module_exists('comment') && ($node->comment == COMMENT_NODE_OPEN || ($node->comment == COMMENT_NODE_CLOSED && $node->comment_count > 0))): ?>
         <div class="comments-count">
@@ -35,7 +29,10 @@
       <?php if ($display_submitted): ?>
           <div class="submitted-user">
           <?php print t('By !username', array('!username' => $name)); ?>
-          <p><?php print $custom_month; ?>/<?php print $custom_day; ?>/<?php print $custom_year; ?></p>
+            <?php $custom_month = format_date($node->created, 'custom', 'M'); ?>
+          <?php $custom_day = format_date($node->created, 'custom', 'd'); ?>
+          <?php $custom_year = format_date($node->created, 'custom', 'Y'); ?>
+          <?php print $custom_month; ?>/<?php print $custom_day; ?>/<?php print $custom_year; ?>
           </div>
       <?php endif; ?>
         
