@@ -47,16 +47,15 @@ var jq = jQuery.noConflict();
 <?php endif; ?>
 
 <!-- #header -->
-<header id="header" class="clearfix">
+<header>
+ <div class="smm">  <!-- #div smm -->
     <div class="container">
-        
         <!-- #header-inside -->
-        <div id="header-inside" class="clearfix">
-            <div class="row">
-            
-                <div class="col-md-4">
-                    <!-- #header-inside-left -->
-                    <div id="header-inside-left" class="clearfix">
+        <div class="smm__container js-smm-container">
+
+                
+                    
+                    
 
                     <?php if ($logo):?>
                     <div id="logo">
@@ -65,9 +64,9 @@ var jq = jQuery.noConflict();
                     <?php endif; ?>
                     
                     <?php if ($site_name):?>
-                    <div id="site-name">
+                    <h1 class="smm__logo-wrapper">
                     <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
-                    </div>
+                    </h1>
                     <?php endif; ?>
                     
                     <?php if ($site_slogan):?>
@@ -80,17 +79,15 @@ var jq = jQuery.noConflict();
                     <?php print render($page['header']); ?>
                     <?php endif; ?>  
 
-                    </div>
-                    <!-- EOF:#header-inside-left -->
-                </div>
+                  
+         
                 
-                <div class="col-md-8">
-                    <!-- #header-inside-right -->
-                    <div id="header-inside-right" class="clearfix">
+            
 
                         <!-- #main-navigation -->
-                        <div id="main-navigation" class="clearfix">
-                            <nav>
+                        <button class="btn btn-default smm__toggle js-smm-toggle visible-xs-block visible-sm-block"><i class="fa fa-bars"></i></button>
+
+                            <nav class="smm__collapse">
                                 <?php if ($page['navigation']) :?>
                                 <?php print render($page['navigation']); ?>
                                 <?php else : ?>
@@ -99,18 +96,16 @@ var jq = jQuery.noConflict();
                                 </div>
                                 <?php endif; ?>
                             </nav>
-                        </div>
-                        <!-- EOF: #main-navigation -->
+                       
 
-                    </div>
-                    <!-- EOF:#header-inside-right -->                        
-                </div>
+
+
+                    
          
-            </div>
         </div>
         <!-- EOF: #header-inside -->
-
     </div>
+</div><!-- #div smm -->
 </header>
 <!-- EOF: #header -->
 
@@ -234,7 +229,7 @@ var jq = jQuery.noConflict();
 
                         <!-- #tabs -->
                         <?php if ($tabs):?>
-                            <div class="tabs">
+                            <div class="tabs">  
                             <?php print render($tabs); ?>
                             </div>
                         <?php endif; ?>
