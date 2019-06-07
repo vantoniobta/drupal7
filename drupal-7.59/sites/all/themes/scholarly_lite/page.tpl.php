@@ -91,10 +91,15 @@ var jq = jQuery.noConflict();
                                 <?php if ($page['navigation']) :?>
                                 <?php print render($page['navigation']); ?>
                                 <?php else : ?>
-                                <div id="main-menu">
-                                <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('main-menu', 'menu'), ), 'heading' => array('text' => t('Main menu'), 'level' => 'h2', 'class' => array('element-invisible'), ), )); ?>
-                                </div>
+                                
+                                <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('smm__primary-menu', 'menu'), ), 'heading' => array('text' => t('Main menu'), 'level' => 'h2', 'class' => array('element-invisible'), ), )); ?>
+                               
                                 <?php endif; ?>
+                                <ul class="smm__secondary-menu">
+                                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                </ul>
                             </nav>
                        
 
@@ -222,7 +227,7 @@ var jq = jQuery.noConflict();
 
                     <!-- #main -->
                     <div id="main" class="clearfix">
-
+                        <br><br><br><br><br><br><br><br>
                         <?php print render($title_prefix); ?>
                         <?php if ($title): ?><h3 class="title" id="page-title"><?php print $title; ?></h3><?php endif; ?>
                         <?php print render($title_suffix); ?>
