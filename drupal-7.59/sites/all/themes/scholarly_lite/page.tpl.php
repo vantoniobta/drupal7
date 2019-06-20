@@ -47,15 +47,14 @@ var jq = jQuery.noConflict();
 <?php endif; ?>
 
 <!-- #header -->
-<header>
- <div class="smm">  <!-- #div smm -->
+<header id="header" class="clearfix">
     <div class="container">
         <!-- #header-inside -->
-        <div class="smm__container js-smm-container">
-
-                
-                    
-                    
+        <div id="header-inside" class="clearfix">
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- #header-inside-left -->
+                    <div id="header-inside-left" class="clearfix">
 
                     <?php if ($logo):?>
                     <div id="logo">
@@ -64,9 +63,9 @@ var jq = jQuery.noConflict();
                     <?php endif; ?>
                     
                     <?php if ($site_name):?>
-                    <h1 class="smm__logo-wrapper">
+                    <div id="site-name">
                     <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
-                    </h1>
+                    </div>
                     <?php endif; ?>
                     
                     <?php if ($site_slogan):?>
@@ -79,38 +78,35 @@ var jq = jQuery.noConflict();
                     <?php print render($page['header']); ?>
                     <?php endif; ?>  
 
-                  
-         
+                    </div>
+                    <!-- EOF:#header-inside-left -->
+                </div>
                 
-            
+                <div class="col-md-8">
+                    <!-- #header-inside-right -->
+                    <div id="header-inside-right" class="clearfix">
 
                         <!-- #main-navigation -->
-                        <button class="btn btn-default smm__toggle js-smm-toggle visible-xs-block visible-sm-block"><i class="fa fa-bars"></i></button>
-
-                            <nav class="smm__collapse">
+                        <div id="main-navigation" class="clearfix">
+                            <nav>
                                 <?php if ($page['navigation']) :?>
                                 <?php print render($page['navigation']); ?>
                                 <?php else : ?>
-                                
-                                <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('smm__primary-menu', 'menu'), ), 'heading' => array('text' => t('Main menu'), 'level' => 'h2', 'class' => array('element-invisible'), ), )); ?>
-                               
+                                <div id="main-menu">
+                                <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('main-menu', 'menu'), ), 'heading' => array('text' => t('Main menu'), 'level' => 'h2', 'class' => array('element-invisible'), ), )); ?>
+                                </div>
                                 <?php endif; ?>
-                                <ul class="smm__secondary-menu">
-                                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                </ul>
                             </nav>
-                       
-
-
-
-                    
+                        </div>
+                        <!-- EOF: #main-navigation -->
+                    </div>
+                    <!-- EOF:#header-inside-right -->                        
+                </div>
          
+            </div>
         </div>
         <!-- EOF: #header-inside -->
     </div>
-</div><!-- #div smm -->
 </header>
 <!-- EOF: #header -->
 
@@ -227,7 +223,7 @@ var jq = jQuery.noConflict();
 
                     <!-- #main -->
                     <div id="main" class="clearfix">
-                        <br><br><br><br><br><br><br><br>
+
                         <?php print render($title_prefix); ?>
                         <?php if ($title): ?><h3 class="title" id="page-title"><?php print $title; ?></h3><?php endif; ?>
                         <?php print render($title_suffix); ?>
