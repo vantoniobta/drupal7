@@ -101,7 +101,7 @@ body.pff-31, .pff-31 input, .pff-31 select, .pff-31 textarea, .pff-31 blockquote
 	.form-text, .form-textarea, .block-superfish select, .block-search .form-submit, #search-block-form .form-submit { background-image: none; } 
 }
 
-body { font-size: 15px; font-weight: 400; line-height: 1.45; color: #1e1e1e; }
+body { font-size: 15px; font-weight: 400; line-height: 1.45; color: #1e1e1e;background-color: #fafafa }
 
 p { margin: 0; padding: 0 0 15px 0; }
 
@@ -226,7 +226,7 @@ h1.title { margin-top:0; margin-bottom: 5px; }
 
 #header-top-inside { position: relative; }
 
-#header { padding: 40px 0 30px 0; position: relative; }
+#header { padding: 14px 0 14px 0; position: relative; background-color: #fdf9f3; border-bottom: 3px solid #75e4d8; }
 
 @media (max-width: 767px) {
 	#header-top-inside.mean-container { padding-right: 55px; }
@@ -251,11 +251,11 @@ h1.title { margin-top:0; margin-bottom: 5px; }
 
 #highlighted { padding: 50px 0 0; }
 
-#highlighted + #main-content { padding: 20px 0; }
+#highlighted + #main-content { padding: 0px 0; }
 
-#main-content { padding: 60px 0; }
+#main-content { padding: 0px 0; }
 
-#promoted { padding: 0 0 20px 0; }
+#promoted { padding: 0 0 0px 0; }
 
 #main { position: relative; }
 
@@ -561,7 +561,7 @@ display: block; background-color: #c2c2c2; right: 0; text-align: center; color: 
 
 #footer-logo { margin: 20px auto 0; text-align: center; }
 
-#site-name { padding:0; margin: 5px 0 0 0; }
+#site-name { padding:0; margin: 15px 0 0 0; }
 
 #site-name a { font-size: 32px; font-weight: 700; line-height:1.1; color: #252525; }
 
