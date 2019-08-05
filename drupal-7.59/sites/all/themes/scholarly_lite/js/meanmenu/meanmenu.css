@@ -15,19 +15,19 @@ a.meanmenu-reveal {
 
 /* when under viewport size, .mean-container is added to body */
 .mean-container .mean-bar {
-	float: left;
 	width: 100%;
 	position: relative;
 	background: #0c1923;
 	padding: 0px 0;
-	min-height: 12px;
+	min-height: 0px;
 	z-index: 999999;
 }
 
 .mean-container a.meanmenu-reveal {
-	width: 22px;
+
+    width: 22px; /* tamaño del icono burger*/
 	height: 22px;
-	padding: 22px 0px 0px 0px;
+	padding: 13px 13px 11px 13px;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -41,6 +41,8 @@ a.meanmenu-reveal {
 	display: block;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 700;
+
+
 }
 
 .mean-container a.meanmenu-reveal span {
@@ -51,14 +53,10 @@ a.meanmenu-reveal {
 }
 
 .mean-container .mean-nav {
-	position: relative;
-	font-size: 10px;
-    text-align: center;
 	float: left;
 	width: 100%;
 	background: #0c1923;
 	margin-top: 44px;
-	text-align: center;
 }
 
 .mean-container .mean-nav ul {
@@ -70,11 +68,8 @@ a.meanmenu-reveal {
 
 .mean-container .mean-nav ul li {
 	position: relative;
-	float: left;
+	float: right;
 	width: 100%;
-	align-items: center;
-	flex: 1;
-	line-height: 20vh;
 }
 
 .mean-container .mean-nav ul li a {
@@ -83,16 +78,13 @@ a.meanmenu-reveal {
 	width: 90%;
 	padding: 1em 5%;
 	margin: 0;
-	text-align: left;
-	color: #fff;
-	border-top: 1px solid #383838;
-	border-top: 1px solid rgba(255,255,255,0.5);
+	color: #C0FFEE;
+/*	border-top: 1px solid #383838;
+	border-top: 1px solid rgba(255,255,255,0.5);*/
 	text-decoration: none;
 	text-transform: uppercase;
-
-
-	font-size: 1.5em;
-	transition: all 0.5s ease;
+	text-align: center;
+	font-family: sans-serif;
 }
 
 .mean-container .mean-nav ul li li a {
@@ -127,7 +119,7 @@ a.meanmenu-reveal {
 }
 
 .mean-container .mean-nav ul li a:hover {
-	background: #252525;
+	background: #C0FFEE;
 	background: rgba(255,255,255,0.1);
 }
 

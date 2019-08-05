@@ -101,7 +101,7 @@ body.pff-31, .pff-31 input, .pff-31 select, .pff-31 textarea, .pff-31 blockquote
 	.form-text, .form-textarea, .block-superfish select, .block-search .form-submit, #search-block-form .form-submit { background-image: none; } 
 }
 
-body { font-size: 15px; font-weight: 400; line-height: 1.45; color: #1e1e1e;background-color: #fafafa }
+body { font-size: 16px; font-weight: 400; line-height: 1.45; color: #1e1e1e;background-color: #fafafa; font-family: sans-serif; text-align: justify; }
 
 p { margin: 0; padding: 0 0 15px 0; }
 
@@ -634,15 +634,7 @@ width: 55px; background-color: #cfd0d2; height: 50px; position: absolute; bottom
 
 /*Node*/
 article.node {  
-	color: #4d665f;
-	margin: 5px;
-	width: 500px;
-	/*height: 50px;
-	background:#bada55;*/
-	text-align: center;	
-	text-align: justify;
-	border: 1px solid #4d665f;
-    border-radius: 5px; 
+	position: relative;
 }
 
 .node.node-teaser { margin-bottom: 55px; }
@@ -651,7 +643,7 @@ article.node {
 
 .node.node-teaser.node-mt .field-type-image { overflow: hidden; }
 
-.node.node-teaser .node-main-content { padding: 0 0 10px 0; border-bottom: 1px solid #acacac; }
+.node.node-teaser .node-main-content { padding: 0 0 10px 0;  }
 
 .node.node-teaser ul.links { display: none; }
 
